@@ -4,3 +4,13 @@ body {
 
 a {
   color: #00B7FF; }
+
+.fadein {
+  position: relative;
+  height: 320px;
+  width: 320px; }
+
+.fadein img {
+  position: absolute;
+  left: 0;
+  top: 0; }
