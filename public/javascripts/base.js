@@ -1,1 +1,3 @@
-console.log("test");
+jQuery(document).ready(function(){
+	console.log("test");
+});
