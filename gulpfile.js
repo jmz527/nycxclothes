@@ -9,10 +9,10 @@ gulp.task('default', ['watch', 'build-js', 'build-css']);
 
 // Minify Custom JS: Run manually with: "gulp build-js"
 gulp.task('build-js', function() {
-  return gulp.src('public/js/*.js')
+  return gulp.src('public/javascripts/*.js')
     // .pipe(plugins.jshint())
     // .pipe(plugins.jshint.reporter('jshint-stylish'))
-    .pipe(plugins.uglify())
+    // .pipe(plugins.uglify())
     .pipe(plugins.concat('scripts.min.js'))
     .pipe(gulp.dest('public'));
 });
@@ -44,6 +44,6 @@ gulp.task('build-css', function() {
 
 // Default task
 gulp.task('watch', function() {
-    gulp.watch('public/js/*.js', ['build-js']);
+    gulp.watch('public/javascripts/*.js', ['build-js']);
     gulp.watch('public/sass/**/*.scss', ['build-css']);
 });
