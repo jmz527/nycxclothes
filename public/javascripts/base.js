@@ -1,19 +1,14 @@
 jQuery(document).ready(function(){
-	console.log("test");
-});
 
+	$('#slideshow3').cycle({ 
+	    delay:  2000, 
+	    speed:  500, 
+	    before: onBefore 
+	}); 
+	 
+	function onBefore() { 
+	    $('#title') 
+	        .html(this.alt); 
+	};
 
-
-
-
-$(function() {
-	$('.fadein img:gt(0)').hide();
-
-	setInterval(function () {
-	    $('.fadein :first-child').fadeOut()
-	                             .next('img')
-	                             .fadeIn()
-	                             .end()
-	                             .appendTo('.fadein');
-	}, 5000); // 5 seconds
 });

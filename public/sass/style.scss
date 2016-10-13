@@ -1,14 +1,13 @@
 @charset "UTF-8";
 
 // Fonts
-// @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+@import 'fa/font-awesome';
 
 // Mixins
 // @import "splices/color";
 
 // Main
-// @import "splices/presets";
+@import "splices/reset";
 // @import "splices/variables";
 // @import "splices/grid";
 @import "splices/base";
-// @import "splices/modals";
