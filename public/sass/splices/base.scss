@@ -1,20 +1,52 @@
+html {
+	background-color: #000;
+}
+
 body {
-  padding: 50px;
+  // padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  // font-family: 'Lobster', cursive;
+  color: #fff;
+	height:100vh;
+	width:100%;
+}
+
+header {
+  position: relative;
+  z-index: 3000;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 a {
   color: #00B7FF;
+  text-decoration: none;
 }
 
-.fadein {
-    position:relative;
-    height:320px;
-    width:320px;
+button {
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 5px;
 }
 
-.fadein img {
-    position:absolute;
-    left:0;
-    top:0;
+div.pics {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+div.pic {
+  // width: 100%;
+  // right: 0;
+  // left: 0;
 }
