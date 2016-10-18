@@ -40,13 +40,20 @@ button {
 }
 
 div.pics {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  max-width:100% !important;
 }
 
 div.pic {
-  // width: 100%;
-  // right: 0;
-  // left: 0;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width:100% !important;
 }
