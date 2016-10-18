@@ -13,7 +13,11 @@ header {
   position: relative;
   z-index: 3000;
 
-  h1 { display: inline-block; }
+  h1 {
+    display: inline-block;
+
+    a { color: #222; }
+  }
   ul {
     display: inline-block;
 
@@ -22,12 +26,12 @@ header {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
 
-  li { display: inline-block; }
+  // li { display: inline-block; }
 }
 
 h1 {
