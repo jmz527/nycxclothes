@@ -51,6 +51,29 @@ Inspiration: [http://www.fanmdjanm.com/](http://www.fanmdjanm.com/)
 
 https://www.instagram.com/nycxclothes/media/
 
+# Copy:
+
+Below is all the info:
+
+About
+Embracing the many you's 
+
+NYCxClothes is a fashion and lifestyle brand dedicated to empowering young women to live their fullest potential. 
+
+Shelcy graduated with a neuropsychology major and the urge to explore all her passions. She can easily go from reading a science magazine to talking about philosophy. She'll most likely always have a notebook in her bag. She loves creating. If she's reading or writing, you can catch her wandering in the city - trying new restaurants, interacting with locals and starting conversations.
+
+Christy is an international business student with a curious soul driven by the arts. She's a film enthusiast who feeds off substance from deep interactions. She's afraid of routine so any given day, you can find her venturing around - watching a movie at dawn on a projector, talking to strangers or trying to discover the next coffee shop.
+
+Contact
+We love meeting new people over brunch or a cup of tea so don't hesitate to reach out :) 
+
+You can also email us about partnerships, collaborations or any other business opportunities at: 
+nycxclothes@gmail.com
+
+We really liked the Sacramento font here: https://fonts.google.com/specimen/Sacramento
+
+****************************************************
+
 # Issues:
 
 # TODO:
