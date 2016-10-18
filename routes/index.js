@@ -3,6 +3,22 @@ var router = express.Router();
 var fs = require("fs");
 var axios = require('axios');
 
+function instaGram(item, idx) {
+  return {
+    idx: idx,
+    code: item.code,
+    link: item.link,
+    low_resolution: item.images.low_resolution,
+    standard_resolution: item.images.standard_resolution,
+    thumbnail: item.images.thumbnail,
+    like_count: item.likes.count,
+    created_time: item.created_time,
+    text: item.caption.text,
+    comment_count: item.comments.count,
+    data: item.comments.data
+  }
+}
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('pages/index', { title: 'NYCxClothes' });
@@ -27,19 +43,7 @@ router.get('/pic/:id', function(req, res, next) {
   if (fs.existsSync('public/data.json'))
     data = JSON.parse(fs.readFileSync('public/data.json', 'utf8'));
 
-  item = {
-    idx: 0,
-    code: data.items[0].code,
-    link: data.items[0].link,
-    low_resolution: data.items[0].images.low_resolution,
-    standard_resolution: data.items[0].images.standard_resolution,
-    thumbnail: data.items[0].images.thumbnail,
-    like_count: data.items[0].likes.count,
-    created_time: data.items[0].created_time,
-    text: data.items[0].caption.text,
-    comment_count: data.items[0].comments.count,
-    data: data.items[0].comments.data
-  }
+  item = instaGram(data.items[0], 0);
 
   res.render('pages/pic', { title: title, id: req.params.id, pic: item });
 });
@@ -78,19 +82,7 @@ router.get('/instagram', function(req, res, next) {
     var reducedItems = [];
 
     data.items.forEach(function(curVal, idx) {
-      reducedItems.push({
-          idx: idx,
-          code: curVal.code,
-          link: curVal.link,
-          low_resolution: curVal.images.low_resolution,
-          standard_resolution: curVal.images.standard_resolution,
-          thumbnail: curVal.images.thumbnail,
-          like_count: curVal.likes.count,
-          created_time: curVal.created_time,
-          text: curVal.caption.text,
-          comment_count: curVal.comments.count,
-          data: curVal.comments.data
-        });
+      reducedItems.push(instaGram(curVal, idx));
     });
 
     return reducedItems;
