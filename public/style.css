@@ -3052,18 +3052,18 @@ header {
   z-index: 3000; }
   header h1 {
     display: inline-block; }
+    header h1 a {
+      color: #222; }
   header ul {
     display: inline-block; }
     header ul li {
       display: inline-block; }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0; }
-  footer li {
-    display: inline-block; }
 
 h1 {
   font-size: 20px;

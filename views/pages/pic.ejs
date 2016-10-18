@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<% include ../partials/head %>
+	<body class="container"> <!-- .container is main centered wrapper -->
+		<% include ../partials/header %>
+
+	<!-- BODY
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<main class="row">
+			<h1>PIC <%= id %></h1>
+
+			<div>
+				<a href="<%= pic.link %>"><img src="<%= pic.standard_resolution.url %>" alt="<%= pic.code %>"></a>
+			</div>
+			<div><span><%= pic.like_count %> likes</span></div>
+			<div><span><%= pic.created_time %></span></div>
+			<p><%= pic.text %></p>
+
+			<ul>
+				<li><span>comment_count:</span><%= pic.comment_count %></li>
+				<li>
+					<ul>
+					<% pic.data.forEach(function(comm) { %>
+						<!-- <li><img src="<%= comm.from.profile_picture %>" alt="profile_picture"></li> -->
+						<li><%= comm.from.username %>: <%= comm.text %></li>
+					<% }); %>
+					</ul>
+				</li>
+			</ul>
+
+		</main>
+		<% include ../partials/footer %>
+	</body>
+
+<!-- SCRIPTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="/scripts.min.js"></script>
+
+<!-- End Document
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</html>

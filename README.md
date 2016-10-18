@@ -7,7 +7,10 @@ NYC-based sisters + fashion & lifestyle vloggers
 
 This is a instagram and youtube data aggregator as well as a fashion, video, and photography app
 
+Heroku demo: [https://nycxclothes.herokuapp.com/](https://nycxclothes.herokuapp.com/)
+
 YouTube: [https://www.youtube.com/channel/UCDhzksj3HUGds3zf7DqhHjA](https://www.youtube.com/channel/UCDhzksj3HUGds3zf7DqhHjA)
+
 Instagram: [https://www.instagram.com/nycxclothes/](https://www.instagram.com/nycxclothes/)
 
 # Technologies Used:
