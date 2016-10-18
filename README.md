@@ -1,19 +1,14 @@
 # nycxclothes
 NYC-based sisters + fashion & lifestyle vloggers
 
+[nycxclothes@gmail.com](nycxclothes@gmail.com)
+
 # Description
 
 This is a instagram and youtube data aggregator as well as a fashion, video, and photography app
 
-https://www.youtube.com/channel/UCDhzksj3HUGds3zf7DqhHjA
-
-https://www.instagram.com/nycxclothes/
-https://www.instagram.com/nycxclothes/media/
-
-http://www.fanmdjanm.com/
-
-nycxclothes@gmail.com
-
+YouTube: [https://www.youtube.com/channel/UCDhzksj3HUGds3zf7DqhHjA](https://www.youtube.com/channel/UCDhzksj3HUGds3zf7DqhHjA)
+Instagram: [https://www.instagram.com/nycxclothes/](https://www.instagram.com/nycxclothes/)
 
 # Technologies Used:
 
@@ -48,6 +43,10 @@ And you should be good to go! Open up [http://localhost:3000](http://localhost:3
 ```
 
 # Planning & Wireframes:
+
+Inspiration: [http://www.fanmdjanm.com/](http://www.fanmdjanm.com/)
+
+https://www.instagram.com/nycxclothes/media/
 
 # Issues:
 
