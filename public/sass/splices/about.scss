@@ -1,0 +1,41 @@
+#about main {
+
+	.about-wrap { text-align: center; }
+
+	.about-img-wrap {
+		border: 2px solid #333;
+		height: 460px;
+		width: 90%;
+		// object-fit: cover;
+
+		// width: 90%; /* or whatever is required */
+		text-align: center; /* ensures the image is always in the h-middle */
+		overflow: hidden; /* hide the cropped portion */
+		display: inline-block;
+	}
+
+	.about-img {
+		height: 100%;
+		position: relative; /* allows repositioning */
+		left: 100%; /* move the whole width of the image to the right */
+		margin-left: -200%; /* magic! */
+	}
+
+	// .about-img.chri { margin-top: -115px; }
+
+	span {
+		font-weight: bold;
+		font-family: 'Sacramento', cursive;
+		font-size: 3.6rem;
+		// line-height: 1.25;
+		letter-spacing: -.1rem;
+		float: left;
+		margin-right: 7px;
+		margin-bottom: -8px;
+	}
+	p {
+		text-align: left;
+		padding-top: 20px;
+		line-height: 24px;
+	}
+}

@@ -19,6 +19,19 @@ function instaGram(item, idx) {
   }
 }
 
+function picFormation(data) {
+  // console.log('status: '+data.status);
+  // console.log('length: '+data.items.length);
+
+  var reducedItems = [];
+
+  data.items.forEach(function(curVal, idx) {
+    reducedItems.push(instaGram(curVal, idx));
+  });
+
+  return reducedItems;
+}
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('pages/index', { title: 'NYCxClothes' });
@@ -48,6 +61,17 @@ router.get('/pic/:id', function(req, res, next) {
   res.render('pages/pic', { title: title, id: req.params.id, pic: item });
 });
 
+router.get('/pics', function(req, res, next) {
+  var data;
+
+  if (fs.existsSync('public/data.json'))
+    data = JSON.parse(fs.readFileSync('public/data.json', 'utf8'));
+
+  data = picFormation(data);
+
+  res.render('pages/pics', { 'title': 'NYCxClothes | pics', 'pics': data });
+});
+
 
 router.get('/instagram', function(req, res, next) {
   var data;
@@ -73,20 +97,6 @@ router.get('/instagram', function(req, res, next) {
 	//   .catch(function (err) {
 	//     console.log(err);
 	//   });
-
-
-	function picFormation(data) {
-		console.log('status: '+data.status);
-		console.log('length: '+data.items.length);
-
-    var reducedItems = [];
-
-    data.items.forEach(function(curVal, idx) {
-      reducedItems.push(instaGram(curVal, idx));
-    });
-
-    return reducedItems;
-	}
 
 	data = picFormation(data);
 
