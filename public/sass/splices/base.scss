@@ -49,6 +49,7 @@ footer {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin: 0;
   font-weight: bold;
   font-family: 'Sacramento', cursive; }
 
@@ -70,3 +71,5 @@ button {
 li {
   list-style-type: none;
 }
+
+p { line-height: 24px; }

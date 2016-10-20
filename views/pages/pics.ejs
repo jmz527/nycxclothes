@@ -7,13 +7,13 @@
 	<!-- BODY
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<main class="row">
-			<h1>Pictures</h1>
+			<h1>Latest Pictures</h1>
 
 			<div class="row">
 			<% pics.forEach(function(pic, idx) { %>
 				<div class="one-half column">
 					<a href="<%= pic.link %>">
-						<img src="<%= pic.thumbnail.url %>" alt="<%= pic.code %>">
+						<img src="<%= pic.low_resolution.url %>" alt="<%= pic.code %>">
 					</a>
 				</div>
 
