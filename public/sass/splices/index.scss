@@ -8,6 +8,23 @@ header.splash {
   margin: 0 0 10vh 10vw;
 }
 
+div.splash-text {
+  h1, h3 {
+    margin: 5px 0;
+    display: inline-block;
+  }
+  h1 { font-family: 'Raleway', sans-serif; }
+  h3 { margin-left: 15px; }
+}
+
+div.splash-links {
+  a { margin: 0 5px; }
+  a:first { margin: 0 5px 0 0; }
+
+  button { padding: 0 10px; }
+  i { margin-right: 4px; }
+}
+
 div.pics {
   position: absolute;
   top: 0;

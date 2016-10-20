@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 	<% include ../partials/head %>
-	<body class="container"> <!-- .container is main centered wrapper -->
+	<body id="about" class="container"> <!-- .container is main centered wrapper -->
 		<% include ../partials/header %>
 
 	<!-- BODY
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-		<main>
-			<h1>ABOUT</h1>
+		<main class="row">
+			<h1>About</h1>
 
-			<p>Embracing the many you's</p>
-
-			<p>NYCxClothes is a fashion and lifestyle brand dedicated to empowering young women to live their fullest potential.</p>
-
-			<p>Shelcy graduated with a neuropsychology major and the urge to explore all her passions. She can easily go from reading a science magazine to talking about philosophy. She'll most likely always have a notebook in her bag. She loves creating. If she's reading or writing, you can catch her wandering in the city - trying new restaurants, interacting with locals and starting conversations.</p>
-
-			<p>Christy is an international business student with a curious soul driven by the arts. She's a film enthusiast who feeds off substance from deep interactions. She's afraid of routine so any given day, you can find her venturing around - watching a movie at dawn on a projector, talking to strangers or trying to discover the next coffee shop.</p>
+			<div class="row">
+				<div class="about-wrap one-half column">
+					<div class="about-img-wrap"><img class="about-img shel" src="/images/shel.jpg" alt="Shelcy"></div>
+					<span>Shelcy</span><p> graduated with a neuropsychology major and the urge to explore all her passions. She can easily go from reading a science magazine to talking about philosophy. She'll most likely always have a notebook in her bag. She loves creating. If she's reading or writing, you can catch her wandering in the city - trying new restaurants, interacting with locals and starting conversations.</p>
+				</div>
+				<div class="about-wrap one-half column">
+					<div class="about-img-wrap"><img class="about-img chri" src="/images/chri.jpg" alt="Christy"></div>
+					<span>Christy</span><p> is an international business student with a curious soul driven by the arts. She's a film enthusiast who feeds off substance from deep interactions. She's afraid of routine so any given day, you can find her venturing around - watching a movie at dawn on a projector, talking to strangers or trying to discover the next coffee shop.</p>
+				</div>
+			</div>
 
 		</main>
 		<% include ../partials/footer %>
