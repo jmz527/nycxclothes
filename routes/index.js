@@ -73,6 +73,11 @@ router.get('/pics', function(req, res, next) {
 });
 
 
+router.get('/vid', function(req, res, next) {
+  var title = 'NYCxClothes | video';
+  res.render('pages/vid', { title: title })
+})
+
 router.get('/instagram', function(req, res, next) {
   var data;
 

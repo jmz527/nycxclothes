@@ -3085,8 +3085,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Sacramento', cursive; }
 
 a {
-  color: #00B7FF;
+  color: #333;
   text-decoration: none; }
+
+a:hover {
+  color: #DC0E72; }
 
 button {
   background-color: #fff;
@@ -3102,68 +3105,6 @@ li {
 
 p {
   line-height: 24px; }
-
-header.splash {
-  bottom: 0;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-  position: absolute;
-  left: 0;
-  margin: 0 0 10vh 10vw; }
-
-div.splash-text h1, div.splash-text h3 {
-  margin: 5px 0;
-  display: inline-block; }
-
-div.splash-text h1 {
-  font-family: 'Raleway', sans-serif;
-  margin-bottom: -10px;
-  margin-right: 15px; }
-
-div.splash-links a {
-  margin: 0 5px;
-  white-space: nowrap; }
-
-div.splash-links a:first {
-  margin: 0 5px 0 0; }
-
-div.splash-links button {
-  padding: 0 10px; }
-
-div.splash-links i {
-  margin-right: 4px; }
-
-div.pics {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-width: 100% !important; }
-
-div.pic {
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-width: 100% !important; }
-
-div.scrim {
-  background-color: #8c7a70;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-  width: 100%;
-  height: 100%;
-  z-index: 500; }
-
-body {
-  background-color: #f0f0f0;
-  width: 700px;
-  float: center; }
 
 hr.style1 {
   border-top: 1px solid #8c8b8b; }
@@ -3292,6 +3233,73 @@ hr.style18:before {
   border-color: #8c8b8b;
   border-width: 0 0 1px 0;
   border-radius: 20px; }
+
+header.splash {
+  bottom: 0;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  left: 0;
+  margin: 0 0 10vh 10vw; }
+
+div.splash-text h1, div.splash-text h3 {
+  margin: 5px 0;
+  display: inline-block; }
+
+div.splash-text h1 {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: -10px;
+  margin-right: 15px; }
+
+div.splash-links a {
+  margin: 0 5px;
+  white-space: nowrap; }
+
+div.splash-links a:first {
+  margin: 0 5px 0 0; }
+
+div.splash-links button {
+  padding: 0 10px; }
+
+div.splash-links i {
+  margin-right: 4px; }
+
+div.pics {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100% !important; }
+
+div.pic {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100% !important; }
+
+div.scrim {
+  background-color: #8c7a70;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  z-index: 500; }
+
+body {
+  background-color: #f0f0f0;
+  width: 700px;
+  float: center; }
+
+#vid-wrap {
+  text-align: center; }
+  #vid-wrap iframe {
+    display: inline-block; }
 
 #about main .about-wrap {
   text-align: center; }
