@@ -1,7 +1,8 @@
 // Load Gulp
 var gulp    = require('gulp'),
     sass = require('gulp-sass'),
-    gutil   = require('gulp-util');
+    // gutil   = require('gulp-util');
+    log = require('fancy-log');
     plugins = require('gulp-load-plugins')();
 
 // Start Watching: Run "gulp"
@@ -39,7 +40,7 @@ gulp.task('build-css', function() {
             }
         ))
         // .pipe(plugins.cssmin())
-        .pipe(gulp.dest('public')).on('error', gutil.log);
+        .pipe(gulp.dest('public')).on('error', log);
 });
 
 // Default task
